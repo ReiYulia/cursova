@@ -1,0 +1,140 @@
+body{
+    font-family: "Prompt", sans-serif;
+    margin:0px;
+}
+.first-page{
+    padding: 0px 60px 100px 60px;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    position: relative;
+    z-index: 1;
+    }
+.head-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+.get-now-btn{
+    background-color: rgba(243, 233, 233, 0.5);
+    border-radius: 3px;
+    padding: 10px 18px;
+    border: 1px solid whitesmoke;
+    text-decoration: none;
+    color: black;
+    
+}
+/* ------------------------------------------------------------ */
+.team-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70vh;
+}
+.team-title{
+    font-weight: 400;
+    font-size: 50px;
+}
+.team-btn{
+    text-decoration: none;
+    color: white;
+    background-color: #6259EA ;
+    padding: 15px 25px;
+    font-weight: 300;
+    border-radius: 5px;
+}
+.member-photo{
+    width: 55%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px rgb(38, 37, 39);
+}
+.team-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 7vh;
+}
+.member-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.member-name{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.member-status{
+    font-size: 20px;
+    font-weight: 400; 
+    margin-top: 0px;
+}
+/* _____________________________________________ */
+.footer{
+    background-color: #1A1930;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+    height: 40vh;
+    
+}
+.gmail{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.span-webflow{
+    color: #6259EA;
+}
+.footer-items-menu{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding-right: 7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 15vh;
+    line-height: 2.7;
+    position: relative;
+}
+
+.footer-items-menu::after{
+    content: "";
+    background: #cbc4c4;
+    height: 1px;
+    width: 123.5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+}
+.footer-items-menu::before{
+    content: "";
+    background: #cbc4c4;
+    height: 1px;
+    width: 123.5%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+li{
+    list-style-type: none;
+}
+.orange-tube-footer{
+ position: absolute;
+ right: 0px;
+ z-index: 1;
+ width: 35vh;
+}
+.footer-menu-link{
+    text-decoration: none;
+    color:#FFFFFF;
+}
