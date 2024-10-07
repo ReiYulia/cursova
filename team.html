@@ -9,7 +9,9 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="team.css">
+      
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="./styles/team.css">
       <link rel="icon" href="images/blue-square.png">
       <title>Swipe | Webflow</title>
    </head>
@@ -21,57 +23,60 @@
                <img src="images/swipe.png" alt="swipe-logo">
             </div>
             <ul class="head-list">
-               <li><a class="head-list" href="index.html">Home</a></li>
-               <li><a class="head-list" href="./index.html#about_us">About us</a></li> 
-               <li><a class="head-list" href="team.html">Team</a></li>
-               <li><a class="head-list" href="blog.html">Blog</a></li>
-               <li><a class="head-list" href="contact.html">Contact</a></li>
+               <li><a class="head-list" href="index.html">Головна</a></li>
+               <li><a class="head-list" href="./index.html#about_us">Про нас</a></li> 
+               <li><a class="head-list" href="team.html">Команда</a></li>
+               <li><a class="head-list" href="blog.html">Блог</a></li>
+               <li><a class="head-list" href="contact.html">Контакти</a></li>
             </ul>
-            <a class="get-now-btn" href="contact.html">Get now</a>
+            <a class="get-now-btn" href="contact.html">Зв'язатись</a>
          </div>
       </section>
       <div class="team-block">
          <div class="team-header">
-            <h1 class="team-title">Meet the team <br>Want to join?</h1>
-            <a class="team-btn" href="contact.html">Долучитись</a>
+            <h1 class="team-title">Команда <br>Бажаєте приєднатись?</h1>
+            <a class="team-btn" href="contact.html">Доєднатись до команди</a>
          </div>
-         <div class="team-members">
-            <div class="team-container">
-               <div class="member-info">
-                  <img class="member-photo" src="images/me.jpg" alt="member-photo"> 
-                  <p class="member-name">Yulia Pysarenko</p>
-                  <p class="member-status">CEO & співзасновник</p>
-               </div>
-               <div class="member-info">
-                  <img class="member-photo" src="images/maks.JPG" alt="member-photo">
-                  <p class="member-name">Max Savula</p>
-                  <p class="member-status">CTO &  співзасновник</p>
-               </div>
-               <div class="member-info">
-                  <img class="member-photo" src="images/dima.jpg" alt="member-photo">
-                  <p class="member-name">Dima Pavliha</p>
-                  <p class="member-status">Старший інженер ПЗ</p>
-               </div>
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+               <img class="member-photo" src="images/me.jpg" alt="member-photo"> 
+               <p class="member-name">Писаренко Юлія</p>
+               <p class="member-status">CEO & співзасновник</p>
             </div>
-            <div class="team-container">
-               <div class="member-info">
-                  <img class="member-photo" src="images/anna.PNG" alt="member-photo"> 
-                  <p class="member-name">Anna Khomenchuk</p>
-                  <p class="member-status">UI/UX Дизайнер</p>
-               </div>
-               <div class="member-info">
-                  <img class="member-photo" src="images/vitya.jpg" alt="member-photo">
-                  <p class="member-name">Vitya Siemens</p>
-                  <p class="member-status">Менеджер з маркетингу</p>
-               </div>
-               <div class="member-info">
-                  <img class="member-photo" src="images/xrustuna.PNG" alt="member-photo">
-                  <p class="member-name">Khrystyna Shevchuk</p>
-                  <p class="member-status">HR-фахівець</p>
-               </div>
+              <div class="swiper-slide">
+                <img class="member-photo" src="images/maks.JPG" alt="member-photo">
+               <p class="member-name">Савула Максим</p>
+               <p class="member-status">CTO & співзасновник</p>
             </div>
-         </div>
+              <div class="swiper-slide">
+                <img class="member-photo" src="images/dima.jpg" alt="member-photo">
+               <p class="member-name">Павліха Дмитро</p>
+               <p class="member-status">Старший інженер ПЗ</p>
+            </div>
+              <div class="swiper-slide">
+               <img class="member-photo" src="images/anna.PNG" alt="member-photo"> 
+               <p class="member-name">Хоменчук Анна</p>
+               <p class="member-status">UI/UX Дизайнер</p>
+            </div>
+              <div class="swiper-slide">
+               <img class="member-photo" src="images/vitya.jpg" alt="member-photo">
+               <p class="member-name">Зеленюх Віктор</p>
+               <p class="member-status">Менеджер з маркетингу</p>
+            </div>
+              <div class="swiper-slide">
+                <img class="member-photo" src="images/xrustuna.PNG" alt="member-photo">
+               <p class="member-name">Шевчук Христина</p>
+               <p class="member-status">HR-фахівець</p>
+            </div>
+              
+            
+          </div>
+
+      
       </div>
+      
+      
       <section>
          <div class="footer">
             <div>
@@ -83,16 +88,16 @@
             <div class="footer-items-menu">
              <div>
                 <ul>
-                   <li><a class="footer-menu-link" href="index.html">Home</a></li>
-                   <li><a class="footer-menu-link" href="./index.html#get-details">About us</a></li>
-                   <li><a class="footer-menu-link" href="team.html">Team</a></li>
+                   <li><a class="footer-menu-link" href="index.html">Головна</a></li>
+                   <li><a class="footer-menu-link" href="./index.html#get-details">Про нас</a></li>
+                   <li><a class="footer-menu-link" href="team.html">Команда</a></li>
                 </ul>
              </div>
              <div>
                 <ul>
-                   <li><a class="footer-menu-link" href="blog.html">Blog</a></li>
-                   <li><a class="footer-menu-link" href="contact.html">Contact</a></li>
-                   <li><a class="footer-menu-link" href="./index.html#get-details">Details</a></li>
+                   <li><a class="footer-menu-link" href="blog.html">Блог</a></li>
+                   <li><a class="footer-menu-link" href="contact.html">Контакти</a></li>
+                   <li><a class="footer-menu-link" href="./index.html#get-details">Деталі</a></li>
                 </ul>
              </div>
              <div>
@@ -106,6 +111,12 @@
             <img class="orange-tube-footer" src="images/tube-reverse.png" alt="orange-tube-smaller">
          </div>
       </section>
+    
     <script src="./js/scroll_main.js"></script>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
    </body>
 </html>

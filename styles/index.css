@@ -1,6 +1,8 @@
 body{
     font-family: "Prompt", sans-serif;
     margin:0px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .first-page{
     padding: 0px 60px 100px 60px;
@@ -215,6 +217,17 @@ body{
 .tech-title-2{
     font-size:35px;
     font-weight: 400;
+}
+#toggle-btn i {
+    display: inline-block;
+    font-size: 35px; 
+    color: #f58743; 
+    transition: transform 0.2s, color 0.2s; 
+    margin-bottom: 30px;
+}
+
+#toggle-btn:hover i {
+    color: #b55017; 
 }
 .footer{
     background-color: #1A1930;

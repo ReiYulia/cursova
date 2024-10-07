@@ -9,7 +9,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="./styles/index.css">
       <link rel="icon" href="images/blue-square.png">
       <title>Swipe | Webflow</title>
    </head>
@@ -22,17 +23,17 @@
                   <img src="images/swipe.png" alt="swipe-logo">
                </div>
                <ul class="head-list">
-                  <li><a class="head-list" href="#">Home</a></li>
-                  <li><a class="head-list" href="#about_us">About us</a></li>
-                  <li><a class="head-list" href="team.html">Team</a></li>
-                  <li><a class="head-list" href="blog.html">Blog</a></li>
-                  <li><a class="head-list" href="contact.html">Contact</a></li>
+                  <li><a class="head-list" href="#">Головна</a></li>
+                  <li><a class="head-list" href="#about_us">Про нас</a></li>
+                  <li><a class="head-list" href="team.html">Команда</a></li>
+                  <li><a class="head-list" href="blog.html">Блог</a></li>
+                  <li><a class="head-list" href="contact.html">Контакти</a></li>
                </ul>
-               <a class="get-now-btn" href="contact.html">Get now</a>
+               <a class="get-now-btn" href="contact.html">Зв'язатись</a>
             </div>
             <div class="main">
                <h1 class="main-title">Ваш провідник<br> у світі IT інновацій.</h1>
-               <p class="main-subtitle">Simple. Precise. Guaranteed.</p>
+               <p class="main-subtitle">Просто. Точно. Гарантовано.</p>
                <a class="demo-btn" href="contact.html">Долучитись</a>
             </div>
             <div class="bottom">
@@ -57,12 +58,12 @@
          <img class="triangles" src="images/triangle.png" alt="triangles">
          <div  class="section">
             <div class="section-1">
-               <h3 class="since2024">SINCE 2024</h3>
-               <h1 class="numbers">In numbers</h1>
+               <h3 class="since2024"> 2024</h3>
+               <h1 class="numbers">Статистика</h1>
             </div>
             <div class="section-2">
                <div class="line"></div>
-               <div class="first-content">
+               <div data-aos="zoom-in-up" class="first-content">
                   <div>
                      <h2 class="section-title">Задоволені клієнти</h2>
                      <p>Наша головна цінність - задоволені клієнти, і ми пишаємося тим, що 98% <br>наших клієнтів повертаються до нас з новими проектами.</p>
@@ -72,7 +73,7 @@
                   </div>
                </div>
                <div class="line"></div>
-               <div class="second-content">
+               <div data-aos="zoom-in-up" class="second-content">
                   <div style="margin-right: 7vh;">
                      <h2 class="section-title">Маштабні проекти</h2>
                      <p>Ми успішно реалізували більше 50 масштабних проектів у різних галузях,<br> включаючи фінансові технології, охорону здоров'я та електронну комерцію. </p>
@@ -82,7 +83,7 @@
                   </div>
                </div>
                <div class="line"></div>
-               <div class="third-content">
+               <div data-aos="zoom-in-up" class="third-content">
                   <div>
                      <h2 class="section-title">Отримані інвестиції</h2>
                      <p>Ми залучили понад 5 мільйонів доларів інвестицій. Ці інвестиції дозволяють<br> нам продовжувати розвивати нашу команду та технології, вдосконалюючи<br> нашу компанію.</p>
@@ -97,7 +98,7 @@
       </section>
       <section >
          <div class="main-features">
-            <h1 id="get-details" class="main-features-title">Get to know our <br> main features</h1>
+            <h1 id="get-details" class="main-features-title">Чому варто обирати <br>саме нас?</h1>
             <a class="get-now" href="contact.html">Долучитись</a>
          </div>
          <div class="features-items">
@@ -109,21 +110,21 @@
             <div class="features-info">
                <div class="features-item">
                   <div>
-                     <h2 class="features-title">Simple</h2>
+                     <h2 class="features-title">Просто</h2>
                      <p>Ми прагнемо створювати прості та <br>інтуїтивно зрозумілі рішення, які легко <br>інтегруються в існуючі системи наших клієнтів.</p>
                      <p><i class="fa-solid fa-gear"></i> Інтеграція без зайвих зусиль</p>
                      <p><i class="fa-regular fa-star"></i> Зрозумілий дизайн</p>
                      <p><i class="fa-solid fa-user-check"></i> Зручність для користувача</p>
                   </div>
                   <div>
-                     <h2 class="features-title">Precise</h2>
+                     <h2 class="features-title">Точно</h2>
                      <p>Ми завжди дотримуємося високих<br> стандартів якості, забезпечуючи точність<br> і  надійність наших продуктів та послуг.</p>
                      <p><i class="fa-solid fa-circle-check"></i> Точні рішення</p>
                      <p><i class="fa-solid fa-book"></i> Увага до дрібниць</p>
                      <p><i class="fa-solid fa-clock-rotate-left"></i> Стабільність роботи в будь-яких умовах</p>
                   </div>
                   <div>
-                     <h2 class="features-title">Guaranteed</h2>
+                     <h2 class="features-title">Гарантовано</h2>
                      <p>Ми гарантуємо виконання всіх зобов'язань <br>перед клієнтами, забезпечуючи впевненість <br> у результаті та довготривале партнерство.</p>
                      <p><i class="fa-solid fa-bolt-lightning"></i> Першокласний результат </p>
                      <p><i class="fa-solid fa-phone-volume"></i> Надійна підтримка</p>
@@ -137,25 +138,31 @@
          <div class="technology-container">
             <div class="tech-container">
                <div>
-                  <h1  class="tech-title-1">Get top-notch technology</h1>
+                  <h1  class="tech-title-1">Отримайте першокласну технологію</h1>
                   <img src="images/orange-circles.png" alt="orange circles">
                </div>
                <div style="border-top: 2px solid #E7E5FF;">
-                  <h2 class="tech-title-2">Rely on us</h2>
+                  <h2 class="tech-title-2">Покладайтесь на нас</h2>
                   <p>Ми постійно впроваджуємо новітні технології та найкращі практики, що дозволяє нам пропонувати інноваційні та високоякісні рішення, які допомагають нашим клієнтам досягати нових висот у своїй діяльності.</p>
-                  <p>Ми завжди дотримуємося обіцянок і виконуємо свої зобов’язання вчасно та в рамках бюджету. Наші клієнти можуть бути впевнені в стабільності та високій якості наших послуг.Саме наша надійність<br>сприяє довірі та довготривалому партнерству.</p>
+                  <p class="second-paragraph"  style="display: none;">Ми завжди дотримуємося обіцянок і виконуємо свої зобов’язання вчасно та в рамках бюджету. Наші клієнти можуть бути впевнені в стабільності та високій якості наших послуг.Саме наша надійність<br>сприяє довірі та довготривалому партнерству.</p>
+                  <div id="toggle-btn" onclick="toggleParagraph(this)" style="cursor: pointer;">
+                     <i class="fa-solid fa-chevron-down"></i>
+                   </div>
                   <div style="display: flex;align-items: center;"><span class="square"></span><a class="get-details" href="#get-details">Деталі</a></div>
                </div>
             </div>
             <div class="tech-container">
                <div style="border-top: 2px solid #E7E5FF;" >
-                  <h2 class="tech-title-2">Any whim you like</h2>
+                  <h2 class="tech-title-2">Виконуємо будь-які забаганки</h2>
                   <p>Ми завжди готові втілити будь-яку задуману ідею або забаганку наших клієнтів в реальність. Незалежно від складності завдання чи потреб, ми працюємо над кожним проєктом з великою увагою до деталей та індивідуальним підходом.Ми адаптуємося до кожного клієнта, пропонуючи рішення, що відповідають<br> конкретним вимогам та викликам.</p>
-                  <p>Наша команда готова взяти на себе будь-які виклики, щоб забезпечити успішний результат та відповідь на всі потреби наших клієнтів.Усі працівники є висококваліфікованими фахівцями з багаторічним досвідом в ІТ-індустрії, що гарантує якість та перевагу над іншими.</p>
+                  <p class="second-paragraph" style="display: none;">Наша команда готова взяти на себе будь-які виклики, щоб забезпечити успішний результат та відповідь на всі потреби наших клієнтів.Усі працівники є висококваліфікованими фахівцями з багаторічним досвідом в ІТ-індустрії, що гарантує якість та перевагу над іншими.</p>
+                  <div id="toggle-btn" onclick="toggleParagraph(this)" style="cursor: pointer;">
+                     <i class="fa-solid fa-chevron-down"></i>
+                   </div>
                   <div style="display: flex;align-items: center;"><span class="square"></span><a class="get-details" href="#get-details">Деталі</a></div>
                </div>
                <div>
-                  <h1 class="tech-title-1">Qualified employees</h1>
+                  <h1 class="tech-title-1">Кваліфіковані працівники</h1>
                   <img src="images/pink-and-green-triangles.png" alt="pink and green triangles">
                </div>
             </div>
@@ -165,23 +172,23 @@
          <div class="footer">
             <div>
                <img src="images/swipe-white.png" alt="swipe-logo-white">
-               <p>Lutsk,Ukraine</p>
+               <p>Луцьк,Україна</p>
                <a class="gmail" href="mailto:yulia.r904@gmail.com">yulia.r904@gmail.com</a>
-               <p>© Swipe. All rights reserved. Powered by <span class="span-webflow">webflow</span></p>
+               <p>© Swipe. Всі права захищені. На базі <span class="span-webflow">webflow</span></p>
             </div>
             <div class="footer-items-menu">
                <div>
                   <ul>
-                     <li><a class="footer-menu-link" href="index.html">Home</a></li>
-                     <li><a class="footer-menu-link" href="#about_us">About us</a></li>
-                     <li><a class="footer-menu-link" href="team.html">Team</a></li>
+                     <li><a class="footer-menu-link" href="index.html">Головна</a></li>
+                     <li><a class="footer-menu-link" href="./index.html#get-details">Про нас</a></li>
+                     <li><a class="footer-menu-link" href="team.html">Команда</a></li>
                   </ul>
                </div>
                <div>
                   <ul>
-                     <li><a class="footer-menu-link" href="blog.html">Blog</a></li>
-                     <li><a class="footer-menu-link" href="contact.html">Contact</a></li>
-                     <li><a class="footer-menu-link" href="#get-details">Details</a></li>
+                     <li><a class="footer-menu-link" href="blog.html">Блог</a></li>
+                     <li><a class="footer-menu-link" href="contact.html">Контакти</a></li>
+                     <li><a class="footer-menu-link" href="./index.html#get-details">Деталі</a></li>
                   </ul>
                </div>
                <div>
@@ -198,4 +205,9 @@
    </body>
    <script src="https://kit.fontawesome.com/ceaf1b09a3.js" crossorigin="anonymous"></script>
    <script src="./js/script_scroll.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script src="./js/tech-details.js"></script>
+   <script>
+     AOS.init();
+   </script>
 </html>  

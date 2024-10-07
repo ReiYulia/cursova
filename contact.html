@@ -9,7 +9,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="contact.css">
+      <link rel="stylesheet" href="./styles/contact.css">
       <link rel="icon" href="images/blue-square.png">
       <title>Swipe | Webflow</title>
    </head>
@@ -21,13 +21,13 @@
                   <img src="images/swipe.png" alt="swipe-logo">
                </div>
                <ul class="head-list">
-                  <li><a class="head-list" href="index.html">Home</a></li>
-                  <li><a class="head-list" href="./index.html#about_us">About us</a></li>
-                  <li><a class="head-list" href="team.html">Team</a></li>
-                  <li><a class="head-list" href="blog.html">Blog</a></li>
-                  <li><a class="head-list" href="contact.html">Contact</a></li>
+                  <li><a class="head-list" href="index.html">Головна</a></li>
+                  <li><a class="head-list" href="./index.html#about_us">Про нас</a></li>
+                  <li><a class="head-list" href="team.html">Команда</a></li>
+                  <li><a class="head-list" href="blog.html">Блог</a></li>
+                  <li><a class="head-list" href="contact.html">Контакти</a></li>
                </ul>
-               <a class="get-now-btn" href="./index.html#get-details">Get details</a>
+               <a class="get-now-btn" href="./index.html#get-details">Дізнатись деталі</a>
             </div>
          </div>
       </section>
@@ -39,26 +39,49 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.6959590648016!2d25.319329376574647!3d50.74412777164979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472599ec08643d57%3A0x396289c604480867!2z0LLRg9C70LjRhtGPINCb0LXRgdGWINCj0LrRgNCw0ZfQvdC60LgsINCb0YPRhtGM0LosINCS0L7Qu9C40L3RgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDMwMDA!5e0!3m2!1suk!2sua!4v1717264416154!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
          <div class="form">
-            <form>
-               
+            <div class="services-or-team-container">
+               <button id="btn-use-services" class="use-services" type="submit" >Скористатись послугами</button>
+               <button id="btn-join-team" class="join-team" type="submit"  >Доєднатись до команди</button>
+            </div>
+            
+            <form class="service-form active form-valid" id="service-form" novalidate>
                <div>
                   <div class="form-item">
-                     <label >Як нам звертатися до вас?</label>
+                     <label>Як нам звертатися до вас?</label>
                   </div>
-                  <input type="text" placeholder="Ваше ім'я">
+                  <input type="text" placeholder="Ваше ім'я" class="input" required>
                   <div class="form-item">
-                     <label >Як зв'язатися з вами?</label>
+                     <label>Як зв'язатися з вами?</label>
                   </div>
-                  <input type="email" placeholder="Ваш email">
+                  <input type="email" placeholder="Ваш email" class="input input-email" required>
                   <div class="form-item">
-                     <label >Як ми можемо вам допомогти?</label>
+                     <label>Як ми можемо вам допомогти?</label>
                   </div>
-                  <input style="height: 8vh;" type="text" placeholder="Ваше повідомлення">
-                   <button class="submit-btn" type="submit">Підтвердити</button>
+                  <input style="height: 8vh;" type="text" placeholder="Ваше повідомлення" class="input" required>
+                  <button class="submit-btn" type="submit">Надіслати</button>
+                  <div class="submit-message"></div>
                </div>
-           
-
             </form>
+            
+            <form class="join-team-form form-valid" id="join-team-form" novalidate>
+               <div>
+                  <div class="form-item">
+                     <label>Як нам звертатися до вас?</label>
+                  </div>
+                  <input type="text" placeholder="Ваше ім'я" class="input" required>
+                  <div class="form-item">
+                     <label>Як зв'язатися з вами?</label>
+                  </div>
+                  <input type="email" placeholder="Ваш email" class="input input-email" required>
+                  <div class="form-item">
+                     <label>Додайте ваше резюме</label>
+                  </div>
+                  <input style="height: 8vh;" type="text" placeholder="Ваше резюме" class="input" required>
+                  <button class="submit-btn" type="submit">Надіслати</button>
+                  <div class="submit-message"></div>
+               </div>
+            </form>
+
          </div>
          
       </section>
@@ -71,20 +94,20 @@
                <p>© Swipe. All rights reserved. Powered by <span class="span-webflow">webflow</span></p>
             </div>
             <div class="footer-items-menu">
-             <div>
-                <ul>
-                   <li><a class="footer-menu-link" href="index.html">Home</a></li>
-                   <li><a class="footer-menu-link" href="./index.html#get-details">About us</a></li>
-                   <li><a class="footer-menu-link" href="team.html">Team</a></li>
-                </ul>
-             </div>
-             <div>
-                <ul>
-                   <li><a class="footer-menu-link" href="blog.html">Blog</a></li>
-                   <li><a class="footer-menu-link" href="contact.html">Contact</a></li>
-                   <li><a class="footer-menu-link" href="./index.html#get-details">Details</a></li>
-                </ul>
-             </div>
+               <div>
+                  <ul>
+                     <li><a class="footer-menu-link" href="index.html">Головна</a></li>
+                     <li><a class="footer-menu-link" href="./index.html#get-details">Про нас</a></li>
+                     <li><a class="footer-menu-link" href="team.html">Команда</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><a class="footer-menu-link" href="blog.html">Блог</a></li>
+                     <li><a class="footer-menu-link" href="contact.html">Контакти</a></li>
+                     <li><a class="footer-menu-link" href="./index.html#get-details">Деталі</a></li>
+                  </ul>
+               </div>
              <div>
                 <ul>
                   <li><a class="footer-menu-link" href="https://www.instagram.com/yuliaaa_rei/">Instagram</a></li>
@@ -97,5 +120,6 @@
          </div>
       </section> 
       <script src="./js/scroll_main.js"></script> 
+      <script src="./js/cotact.js"></script>
    </body>
 </html>
