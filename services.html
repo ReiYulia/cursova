@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/services.css">
+    <link rel="icon" href="images/blue-square.png">
+    <title>Swipe | Webflow</title>
+</head>
+<body>
+    <body id="body">
+        <section>
+           <div class="first-page">
+           <div class="head">
+              <div class="swipe-logo">
+                 <img src="images/swipe.png" alt="swipe-logo">
+              </div>
+              <ul class="head-list">
+                 <li><a class="head-list" href="index.html">Головна</a></li>
+                 <li><a class="head-list" href="./index.html#about_us">Про нас</a></li> 
+                 <li><a class="head-list" href="team.html">Команда</a></li>
+                 <li><a class="head-list" href="services.html">Послуги</a></li>
+                 <li><a class="head-list" href="blog.html">Блог</a></li>
+                 <li><a class="head-list" href="contact.html">Контакти</a></li>
+              </ul>
+              <a class="get-now-btn" href="contact.html">Зв'язатись</a>
+           </div>
+        </section> 
+        
+        <div class="services-header" >
+         <h1 class="service-title">Наші послуги</h1>
+        
+        </div>
+        <div class="search-container">
+          <input class="search" type="text" id="service-search" placeholder="Пошук послуг..." onkeyup="searchServices()" >
+          <img class="background-img" src="images/purple-circle.png" alt="purple-circle">
+        </div>
+         
+
+        <div class="services">
+         <div class="service-card">
+            <img src="images/web-service.webp" alt="Веб-розробка">
+            <h2>Веб-розробка</h2>
+            <p>Створення адаптивних сайтів та веб-додатків для будь-яких потреб бізнесу.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/phone-app-service.webp" alt="Мобільні додатки">
+            <h2>Мобільні додатки</h2>
+            <p>Розробка функціональних додатків для iOS та Android.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/cyber-service.webp" alt="Кібербезпека">
+            <h2>Кібербезпека</h2>
+            <p>Захист даних та моніторинг безпеки для уникнення кіберзагроз.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/consult-service.webp" alt="ІТ-консалтинг">
+            <h2>ІТ-консалтинг</h2>
+            <p>Експертна допомога у впровадженні сучасних ІТ-рішень.</p>
+        </div>
+        </div>
+        
+        <section>
+         <div class="footer">
+            <div>
+               <img src="images/swipe-white.png" alt="swipe-logo-white">
+               <p>Луцьк,Україна</p>
+               <a class="gmail" href="mailto:yulia.r904@gmail.com">yulia.r904@gmail.com</a>
+               <p>© Swipe. Всі права захищені. На базі <span class="span-webflow">webflow</span></p>
+            </div>
+            <div class="footer-items-menu">
+               <div>
+                  <ul>
+                     <li><a class="footer-menu-link" href="index.html">Головна</a></li>
+                     <li><a class="footer-menu-link" href="./index.html#get-details">Про нас</a></li>
+                     <li><a class="footer-menu-link" href="team.html">Команда</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><a class="footer-menu-link" href="blog.html">Блог</a></li>
+                     <li><a class="footer-menu-link" href="contact.html">Контакти</a></li>
+                     <li><a class="footer-menu-link" href="./index.html#get-details">Деталі</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul>
+                     <li><a class="footer-menu-link" href="https://www.instagram.com/yuliaaa_rei/">Instagram</a></li>
+                  <li><a class="footer-menu-link" href="https://x.com/Yulia763164">Twitter</a></li>
+                  <li><a class="footer-menu-link" href="https://www.facebook.com/yulia.samolyk">Facebook</a></li>
+                  </ul>
+               </div>
+            </div>
+            <img class="orange-tube-footer" src="images/tube-reverse.png" alt="orange-tube-smaller">
+         </div>
+      </section>
+
+ <script src="js/search.js"></script>
+</body>
+</html>

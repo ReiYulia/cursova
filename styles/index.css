@@ -12,6 +12,7 @@ body{
     width: 47%;
     margin-right: 15vh;
 }
+/*------------------------------------------------------------*/ 
 .head{
     display: flex;
     justify-content: space-around;

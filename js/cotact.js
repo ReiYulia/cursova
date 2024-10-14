@@ -4,13 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const form_use_services = document.getElementById("service-form");
     const form_join_team = document.getElementById("join-team-form");
 
-    // Функція для приховування всіх форм і видалення активного класу з кнопок
     const hideAllForms = () => {
         form_use_services.classList.remove('active');
         form_join_team.classList.remove('active');
     };
 
-    // Показує ту форму, на яку кнопку натискаємо
+    
     btn_use_services.addEventListener('click', (event) => {
         event.preventDefault();
         hideAllForms();
@@ -32,13 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const input_emails = document.querySelectorAll('.input-email');
     const submit_messages = document.querySelectorAll('.submit-message'); // Отримуємо всі елементи з класом submit-message
     
-    // Email validation function
+  
     function validateEmail(email) {
         let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
 
-    // Function to check if the email is from another country
+    
     function isEmailFromAnotherCountry(email) {
         let re = /\.co$/; 
         return re.test(String(email).toLowerCase());
@@ -48,11 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
         form.addEventListener('submit', (event) => {
             event.preventDefault();
 
-            // Очищуємо попереднє повідомлення
+            
             submit_messages[index].innerHTML = "";
 
             const inputs = form.querySelectorAll('.input');
-            const email_input = input_emails[index];  // Отримуємо відповідний email input
+            const email_input = input_emails[index];  
             let emailVal = email_input.value;
             let emptyInputs = Array.from(inputs).filter(input => input.value === '');
 
@@ -85,9 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 email_input.classList.remove('error');
             }
 
-            // Якщо все валідно, показуємо повідомлення
             submit_messages[index].innerHTML = "<h3>Форму надіслано</h3>";
-            form.reset(); // Очищаємо форму після успішної валідації
+            form.reset(); 
         });
     });
 });
